@@ -29,6 +29,7 @@ body{
     padding-bottom: 5x;
     
 }
+
 .search-button {
     font-size: 20px;
     line-height: 30px;
@@ -37,7 +38,6 @@ body{
     text-align: center;
     vertical-align: bottom;
     border-radius: 0px 10px 10px 0px !important;
-    /* width: 100px; */
 }
 
 #search-input{
@@ -45,8 +45,22 @@ body{
     border-style: none;
     text-align: center;
     opacity: 95%;
-  
+    outline: none;
+    padding: 5px 15px;
 }
+
+#search-input:hover{
+    color:rgb(105, 17, 17) ;
+    transition: all 0.3s ease-in-out; 
+}
+ /* .input-group{
+    box-shadow: 0px 3px 3px #000;  
+}   */
+.input-group:hover{
+    box-shadow: 0px 0px 3px 3px  rgba(9, 24, 56, 0.315); 
+    border-radius: 10px 10px 10px 10px !important; 
+}  
+ 
 
 #form-heading{
     color: black;
