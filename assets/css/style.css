@@ -4,7 +4,7 @@ html{
 
 body{
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(45deg, rgba(183,204,246,0.7), rgba(7,43,127,067)), url("/assets/images/bg.jpg");
+    background: linear-gradient(45deg, rgba(183, 204, 246, 0.651), rgba(3,49,68,100)), url("/assets/images/bg.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -12,10 +12,8 @@ body{
 }
 
 .weather-header{    
-    background: rgba(9, 24, 56, 0.589);
-    
+    background: #00161f70;   
 }
-
 
 #search-city {
     padding-top: 20px;
@@ -26,14 +24,13 @@ body{
 }
 
 #search-city h2{
-    padding-bottom: 5x;
-    
+    padding-bottom: 5x; 
 }
 
 .search-button {
     font-size: 20px;
     line-height: 30px;
-    background-color:rgba(9, 24, 56, 0.767);;
+    background-color: #00161fe0;
     color:white;
     text-align: center;
     vertical-align: bottom;
@@ -49,13 +46,6 @@ body{
     padding: 5px 15px;
 }
 
-#search-input:hover{
-    color:rgb(105, 17, 17) ;
-    transition: all 0.3s ease-in-out; 
-}
- /* .input-group{
-    box-shadow: 0px 3px 3px #000;  
-}   */
 .input-group:hover{
     box-shadow: 0px 0px 3px 3px  rgba(9, 24, 56, 0.315); 
     border-radius: 10px 10px 10px 10px !important; 
