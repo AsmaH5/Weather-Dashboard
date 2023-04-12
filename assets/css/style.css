@@ -3,12 +3,17 @@ html{
 }
 
 body{
-    background: linear-gradient(45deg, rgba(183,204,246,0.7), rgba(7,43,127,067));
     font-family: 'Roboto', sans-serif;
+    background: linear-gradient(45deg, rgba(183,204,246,0.7), rgba(7,43,127,067)), url("/assets/images/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
 }
 
-.weather-header{
-    background: rgba(9, 24, 56, 0.767);
+.weather-header{    
+    background: rgba(9, 24, 56, 0.589);
+    
 }
 
 
@@ -22,6 +27,7 @@ body{
 
 #search-city h2{
     padding-bottom: 5x;
+    
 }
 .search-button {
     font-size: 20px;
@@ -38,6 +44,11 @@ body{
     border-radius: 10px 0px 0px 10px !important;
     border-style: none;
     text-align: center;
+    opacity: 95%;
   
+}
+
+#form-heading{
+    color: black;
 }
 
