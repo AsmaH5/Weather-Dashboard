@@ -1,5 +1,6 @@
 html{
-    height: 160%;
+    height: 160vh;
+    scroll-behavior: smooth;
     
 }
 
@@ -97,8 +98,11 @@ body{
 }
 
 .weekF{
-    float: left;
-    margin-left: -60px;
+    margin-right: -527px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr) ;
+    column-gap: 3%;
+    
 }
 
 .weekF p{
