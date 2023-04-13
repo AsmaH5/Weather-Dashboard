@@ -1,5 +1,6 @@
 html{
-    height: 100%;
+    height: 160%;
+    
 }
 
 body{
@@ -8,6 +9,9 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    width: auto;
+    margin: 0;
+    position: relative;
     
 }
 
@@ -69,7 +73,7 @@ body{
 
 .box{
     /* border: 2px solid rgba(9, 24, 56, 0.534); */
-    box-shadow: 0px 0px 3px 3px  rgba(9, 24, 56, 0.5); 
+    box-shadow: 0px 0px 3px 3px  rgba(9, 24, 56, 0.637); 
     height: 150px;
     width: 600px;
 }
@@ -77,4 +81,49 @@ body{
 .box h3{
     padding: 10px;
 }
+
+#forecastD{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#forecastD h3{
+    color: black;
+    text-decoration: underline;
+
+}
+
+.weekF{
+    float: left;
+    margin-left: -60px;
+}
+
+.weekF p{
+    color: black;
+    margin-top: 10px;  
+    padding-left: 10px;   
+}
+
+.dayF{
+    background-color:rgba(9, 24, 56, 0.582) ;
+    border-radius: 5px;
+    height: 180px;
+    width: 150px;
+    padding-left: 10px;
+    padding-top: 5px;
+    margin-top: 15px;
+}
+
+.dayF p{
+    color: white;
+
+}
+
+.date{
+    font-weight: bold;
+}
+
 
