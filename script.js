@@ -42,3 +42,10 @@ if (cityList){
         list.appendChild(li);
     }
 } 
+
+async function getWeatherData(searchValue) {
+    var response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${searchValue}&appid=7c55eabe41a6d9a04ba0296a7cd914b8&units=metric`);
+    const data = await response.json();
+    console.log(data);
+    return data;
+}
