@@ -23,22 +23,47 @@ body{
 .row{
     display: flex;
     justify-content: center;
-  }
-  #search-city {
-  padding-top: 20px;
-  width: 60%;
-  }
-  
-  #search-city h2{
-  padding-bottom: 5px; 
-  }
-  
-  .search-button {
-  font-size: 20px;
-  line-height: 30px;
-  background-color: #00161fe0;
-  color:white;
-  text-align: center;
-  vertical-align: bottom;
-  border-radius: 0px 10px 10px 0px !important;
-  }
+}
+#search-city {
+    padding-top: 20px;
+    width: 60%;
+}
+
+#search-city h2{
+    padding-bottom: 5px; 
+}
+
+.search-button {
+    font-size: 20px;
+    line-height: 30px;
+    background-color: #00161fe0;
+    color:white;
+    text-align: center;
+    vertical-align: bottom;
+    border-radius: 0px 10px 10px 0px !important;
+}
+
+#search-input{
+    border-radius: 10px 0px 0px 10px !important;
+    border-style: none;
+    text-align: center;
+    opacity: 95%;
+    outline: none;
+    padding: 5px 15px;
+}
+
+.input-group:hover{
+    box-shadow: 0px 0px 3px 3px  rgba(9, 24, 56, 0.315); 
+    border-radius: 10px 10px 10px 10px !important; 
+}  
+
+#form-heading{
+    color: black;
+}
+
+#location{
+    padding-top: 20px;
+    color: black;
+    width: 120%;
+    margin-top: 0.25rem!important;
+}
