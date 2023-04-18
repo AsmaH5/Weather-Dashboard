@@ -49,3 +49,24 @@ async function getWeatherData(searchValue) {
     console.log(data);
     return data;
 }
+
+
+function displayWeatherData(data){
+    document.getElementById('location').style.display = 'block';
+    
+     var city = data.name
+     var image = $(".image-main")
+     var temp = data.main.temp
+     var humidity = data.main.humidity
+     var wind = data.wind.speed
+
+     var rightNow = moment().format('DD MMM YYYY');
+
+     image.attr("src", "https://openweathermap.org/img/w/" + data.weather[0].icon + ".png")
+
+     $("#city").html(city +" "+ rightNow);
+     $("#temperature").html("Temperature: " + temp + " "+ "°C");
+     $("#humidity").html("Humidity: " +humidity + " "+ "%");
+     $("#wind-speed").html("Wind Speed: " +wind);
+     
+}
