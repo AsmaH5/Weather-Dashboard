@@ -70,3 +70,28 @@ function displayWeatherData(data){
      $("#wind-speed").html("Wind Speed: " +wind);
      
 }
+
+//5Day Forecasts:
+
+async function getForecastData(searchValue) {
+    var response = await fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${searchValue}&appid=7c55eabe41a6d9a04ba0296a7cd914b8&units=metric`);
+    const data = await response.json();
+    console.log(data);
+    var fiveDayForecast = {};
+    var date; 
+    var currentDate = moment().format('YYYY-MM-DD');
+
+    data.list.map(item => {
+        date = item.dt_txt.slice(0, 10);
+        if (currentDate != date){
+            if (!fiveDayForecast[date]){
+                fiveDayForecast[date] = [];
+                fiveDayForecast[date].push(item);
+            }
+        }
+    });
+
+    console.log(fiveDayForecast)
+
+    return fiveDayForecast;
+}
