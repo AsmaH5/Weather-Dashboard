@@ -104,4 +104,18 @@ li {
     list-style: none;
     /* font-weight: 300; */
     color: whitesmoke;
- }
+}
+
+#forecastD{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px !important;
+}
+    
+#forecastD h3{
+    color: whitesmoke;
+    text-decoration: underline;
+    
+}
