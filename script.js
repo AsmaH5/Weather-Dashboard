@@ -96,3 +96,76 @@ async function getForecastData(searchValue) {
     return fiveDayForecast;
 }
 
+function displayForecastData(data){
+    document.getElementById('forecastD').style.display = 'flex';
+
+    var date1 = $('.date1');
+    var img1 = $(".image1");
+    var temp1 = $('.temp1');
+    var wind1 = $('.wind1');
+    var humidity1 = $('.humidity1');
+
+   
+
+    date1.html(Object.values(data)[0][0].dt_txt.slice(0, 10))
+    img1.attr("src", "https://openweathermap.org/img/w/" + (Object.values(data)[0][0].weather[0].icon + ".png"))
+    temp1.html("Temperature: " + Object.values(data)[0][0].main.temp+ " "+ "°C")
+    humidity1.html("Humidity: " + Object.values(data)[0][0].main.humidity +" "+ "%")
+    wind1.html("Wind Speed: " + Object.values(data)[0][0].wind.speed)
+
+    var date2 = $('.date2');
+    var img2 = $(".image2");
+    var temp2 = $('.temp2');
+    var wind2 = $('.wind2');
+    var humidity2 = $('.humidity2');
+   
+
+    date2.html(Object.values(data)[1][0].dt_txt.slice(0, 10))
+    img2.attr("src", "https://openweathermap.org/img/w/" + (Object.values(data)[1][0].weather[0].icon + ".png"))
+    temp2.html("Temperature: " +Object.values(data)[1][0].main.temp+ " "+ "°C")
+    humidity2.html("Humidity: " +Object.values(data)[1][0].main.humidity+ " "+ "%")
+    wind2.html("Wind Speed: " +Object.values(data)[1][0].wind.speed)
+    
+
+    var date3 = $('.date3');
+    var img3 = $(".image3");
+    var temp3 = $('.temp3');
+    var wind3 = $('.wind3');
+    var humidity3 = $('.humidity3');
+   
+
+    date3.html(Object.values(data)[2][0].dt_txt.slice(0, 10))
+    img3.attr("src", "https://openweathermap.org/img/w/" + (Object.values(data)[2][0].weather[0].icon + ".png"))
+    temp3.html("Temperature: " +Object.values(data)[2][0].main.temp+ " "+ "°C")
+    wind3.html("Wind Speed: " +Object.values(data)[2][0].wind.speed)
+    humidity3.html("Humidity: " +Object.values(data)[2][0].main.humidity+ " "+ "%")
+    
+
+    var date4 = $('.date4');
+    var img4 = $(".image4");
+    var temp4 = $('.temp4');
+    var wind4 = $('.wind4');
+    var humidity4 = $('.humidity4');
+   
+
+    date4.html(Object.values(data)[3][0].dt_txt.slice(0, 10))
+    img4.attr("src", "https://openweathermap.org/img/w/" + (Object.values(data)[3][0].weather[0].icon + ".png"))
+    temp4.html("Temperature: " +Object.values(data)[3][0].main.temp+ " "+ "°C")
+    wind4.html("Wind Speed: " +Object.values(data)[3][0].wind.speed)
+    humidity4.html("Humidity: " +Object.values(data)[3][0].main.humidity+ " "+ "%")
+
+    var date5 = $('.date5');
+    var img5 = $(".image5");
+    var temp5 = $('.temp5');
+    var wind5 = $('.wind5');
+    var humidity5 = $('.humidity5');
+   
+
+    date5.html(Object.values(data)[4][0].dt_txt.slice(0, 10))
+    img5.attr("src", "https://openweathermap.org/img/w/" + (Object.values(data)[4][0].weather[0].icon + ".png"))
+    temp5.html("Temperature: " +Object.values(data)[4][0].main.temp+ " "+ "°C")
+    wind5.html("Wind Speed: " +Object.values(data)[4][0].wind.speed)
+    humidity5.html("Humidity: " +Object.values(data)[4][0].main.humidity+ " "+ "%")
+
+
+}
