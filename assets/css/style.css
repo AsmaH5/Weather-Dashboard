@@ -84,3 +84,24 @@ body{
     color: whitesmoke;
     margin-left: 14px;
 }
+
+#location h3 {
+    color: whitesmoke;
+}
+    
+#form-heading{
+    color: whitesmoke; 
+}
+    
+ul {
+    margin-top: -6px;
+    overflow: auto;
+    margin-left: -18px;
+}
+    
+li {
+    padding: 5px;
+    list-style: none;
+    /* font-weight: 300; */
+    color: whitesmoke;
+ }
