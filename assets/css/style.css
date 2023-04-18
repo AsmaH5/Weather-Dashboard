@@ -20,3 +20,25 @@ body{
     background: #00161f70;   
 }
 
+.row{
+    display: flex;
+    justify-content: center;
+  }
+  #search-city {
+  padding-top: 20px;
+  width: 60%;
+  }
+  
+  #search-city h2{
+  padding-bottom: 5px; 
+  }
+  
+  .search-button {
+  font-size: 20px;
+  line-height: 30px;
+  background-color: #00161fe0;
+  color:white;
+  text-align: center;
+  vertical-align: bottom;
+  border-radius: 0px 10px 10px 0px !important;
+  }
