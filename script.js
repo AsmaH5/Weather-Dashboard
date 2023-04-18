@@ -79,16 +79,16 @@ async function getForecastData(searchValue) {
     console.log(data);
     var fiveDayForecast = {};
     var date; 
-    var currentDate = moment().format('YYYY-MM-DD');
+    // var currentDate = moment().format('YYYY-MM-DD');
 
     data.list.map(item => {
         date = item.dt_txt.slice(0, 10);
-        if (currentDate != date){
+        // if (currentDate != date){
             if (!fiveDayForecast[date]){
                 fiveDayForecast[date] = [];
                 fiveDayForecast[date].push(item);
             }
-        }
+        // }
     });
 
     console.log(fiveDayForecast)
