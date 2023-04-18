@@ -30,3 +30,15 @@ button.addEventListener("click", function(event){
 
     localStorage.setItem("cityNames", JSON.stringify(cities));
 });
+
+var cityList = JSON.parse(localStorage.getItem("cityNames"));
+var list = document.getElementById("history");
+
+
+if (cityList){
+    for(var i = 0; i < cityList.length; i++){
+        var li = document.createElement("li");
+        li.innerText = cityList[i];
+        list.appendChild(li);
+    }
+} 
