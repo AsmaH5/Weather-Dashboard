@@ -43,63 +43,83 @@
                 <div class="list-group" id="history"></div>
             </aside>
             <div class="col-lg-6 pb-4" id="location">
-                <h3> Current City:</h3>
+                <h3> Current City:
+                </h3>
                 <div class="box">
-                    <h3>London</h3>
+                        <div class="header-city">
+                            <h3 id="city"> </h3>
+                            <img class="image-main">
+                        </div>    
+                    
+                    <ul>
+                        <li id="temperature"></li>
+                        <li id="humidity"></li>
+                        <li id="wind-speed"></li>
+                    </ul>
                 </div>
             </div>
-    
-            <!-- <div class="col-lg-9 pb-3">
-                <section id="today" class="mt-3" role="region" aria-live="polite"></section>
-                <section id="forecast" class="row mt-3" role="region" aria-live="polite"></section>
-            </div> -->
         </div>
 
-        <div id="forecastD">
-            <div class="divider2"></div>
-            <h3 class="cast-header">5-days Forecasts:</h3>
-            <div class="weekF">
-                <div class="dayF">
-                    <p class="date">Fri April 23</p>
-                    <p class="temp">Temp: 31 °C </p>
-                    <p class="wind">Wind: 5.3 KPH</p>
-                    <p class="humidity">Humidity: 38 %</p>
+        <div id="forecastD" class="card-deck mt-3">
+            <h3 class="forecasts-header" class="mt-3"> 5-day Forecast:</h3>
+            <div class="weekF" class="row">
+                <div class="col-md-2.5">
+                    <div class="dayF" id="day1">
+                        <p class="date1"></p>
+                        <img class="image1">
+                        <p class="temp1"></p>
+                        <p class="humidity1"></p>
+                        <p class="wind1"></p>
+                    </div> 
                 </div>
 
-                <div class="dayF">
-                    <p class="date">Fri April 23</p>
-                    <p class="temp">Temp: 31 °C </p>
-                    <p class="wind">Wind: 5.3 KPH</p>
-                    <p class="humidity">Humidity: 38 %</p>
+                <div class="col-md-2.5">
+                    <div class="dayF" id="day2">
+                        <p class="date2"></p>
+                        <img class="image2">
+                        <p class="temp2"></p>
+                        <p class="humidity2"></p>
+                        <p class="wind2"></p>       
+                    </div>
                 </div>
 
-                <div class="dayF">
-                    <p class="date">Fri April 23</p>
-                    <p class="temp">Temp: 31 °C </p>
-                    <p class="wind">Wind: 5.3 KPH</p>
-                    <p class="humidity">Humidity: 38 %</p>
+                <div class="col-md-2.5">
+                    <div class="dayF" id="day3">
+                        <p class="date3"></p>
+                        <img class="image3">
+                        <p class="temp3"></p>
+                        <p class="wind3"></p>
+                        <p class="humidity3"></p>
+                    </div>
                 </div>
 
-                <div class="dayF">
-                    <p class="date">Fri April 23</p>
-                    <p class="temp">Temp: 31 °C </p>
-                    <p class="wind">Wind: 5.3 KPH</p>
-                    <p class="humidity">Humidity: 38 %</p>
+                <div class="col-md-2.5">    
+                    <div class="dayF" id="day4">
+                        <p class="date4"></p>
+                        <img class="image4">
+                        <p class="temp4"></p>
+                        <p class="wind4"></p>
+                        <p class="humidity4"></p>
+                    </div>
                 </div>
 
-                <div class="dayF">
-                    <p class="date">Fri April 23</p>
-                    <p class="temp">Temp: 31 °C </p>
-                    <p class="wind">Wind: 5.3 KPH</p>
-                    <p class="humidity">Humidity: 38 %</p>
+                <div class="col-md-2.5">   
+                    <div class="dayF" id="day5">
+                        <p class="date5"></p>
+                        <img class="image5">
+                        <p class="temp5"></p>
+                        <p class="wind5"></p>
+                        <p class="humidity5"></p>
+                    </div>
                 </div>
-                
+
             </div>
         </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="script.js"></script>
 </body>
 

@@ -1,7 +1,6 @@
 html{
-    height: 160vh;
     scroll-behavior: smooth;
-    
+    height: 100%;
 }
 
 body{
@@ -13,121 +12,11 @@ body{
     width: auto;
     margin: 0;
     position: relative;
+    background-attachment: fixed;
     
 }
 
 .weather-header{    
     background: #00161f70;   
 }
-
-.row{
-        display: flex;
-        justify-content: center;
-}
-#search-city {
-    padding-top: 20px;
-    /* float: left;
-    margin: 0; */
-    /* margin-left: -80px; */
-    width: 60%;
-}
-
-#search-city h2{
-    padding-bottom: 5px; 
-}
-
-.search-button {
-    font-size: 20px;
-    line-height: 30px;
-    background-color: #00161fe0;
-    color:white;
-    text-align: center;
-    vertical-align: bottom;
-    border-radius: 0px 10px 10px 0px !important;
-}
-
-#search-input{
-    border-radius: 10px 0px 0px 10px !important;
-    border-style: none;
-    text-align: center;
-    opacity: 95%;
-    outline: none;
-    padding: 5px 15px;
-}
-
-.input-group:hover{
-    box-shadow: 0px 0px 3px 3px  rgba(9, 24, 56, 0.315); 
-    border-radius: 10px 10px 10px 10px !important; 
-}  
- 
-
-#form-heading{
-    color: black;
-}
-
-#location{
-    padding-top: 20px;
-    color: black;
-    width: 120%;
-    margin-top: 0.25rem!important;
-}
-
-.box{
-    /* border: 2px solid rgba(9, 24, 56, 0.534); */
-    box-shadow: 0px 0px 3px 3px  rgba(9, 24, 56, 0.637); 
-    height: 150px;
-    width: 600px;
-}
-
-.box h3{
-    padding: 10px;
-}
-
-#forecastD{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-}
-
-#forecastD h3{
-    color: black;
-    text-decoration: underline;
-
-}
-
-.weekF{
-    margin-right: -527px;
-    display: grid;
-    grid-template-columns: repeat(5,1fr) ;
-    column-gap: 3%;
-    
-}
-
-.weekF p{
-    color: black;
-    margin-top: 10px;  
-    padding-left: 10px;   
-}
-
-.dayF{
-    background-color:rgba(9, 24, 56, 0.582) ;
-    border-radius: 5px;
-    height: 180px;
-    width: 150px;
-    padding-left: 10px;
-    padding-top: 5px;
-    margin-top: 15px;
-}
-
-.dayF p{
-    color: white;
-
-}
-
-.date{
-    font-weight: bold;
-}
-
 
