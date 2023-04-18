@@ -150,3 +150,22 @@ li {
 .dayF p{
     color: whitesmoke;
 }
+
+.date{
+    font-weight: bold;
+}
+    
+img{
+    margin-left: 10px;
+}
+    
+.header-city{
+    display: flex;
+}
+    
+.date1, .date2, .date3, .date4, .date5{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+    
