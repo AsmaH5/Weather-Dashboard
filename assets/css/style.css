@@ -67,3 +67,20 @@ body{
     width: 120%;
     margin-top: 0.25rem!important;
 }
+
+.box{
+    box-shadow: 4px 5px 15px  #00000083; 
+    height: 170px;
+    width: 700px;
+    background: linear-gradient(45deg, rgba(183, 204, 246, 0.404), rgba(3,49,68,100)), url("/assets/images/bg2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+    
+.box h3{
+    padding: 10px;
+    font-weight: 500;
+    color: whitesmoke;
+    margin-left: 14px;
+}
