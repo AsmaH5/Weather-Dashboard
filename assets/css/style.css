@@ -133,3 +133,20 @@ li {
     /* margin-right: -15px; */
     margin-left: 7px;
 }  
+
+.dayF{
+    /* display: flex;
+    flex-direction: column; */
+    background-color:#4E7597 ;
+    border-radius: 5px;
+    height: 240px;
+    width: 190px;
+    padding-left: 10px;
+    padding-top: 5px;
+    margin-top: 15px;
+    box-shadow: 4px 5px 15px  #00000083; 
+}
+    
+.dayF p{
+    color: whitesmoke;
+}
