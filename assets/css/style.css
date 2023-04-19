@@ -152,7 +152,9 @@ li {
 }
     
 img{
-    margin-left: 10px;
+    display: block;
+    margin-left: 58px;
+    margin-right: auto;
 }
     
 .header-city{
