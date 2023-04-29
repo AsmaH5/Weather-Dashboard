@@ -5,7 +5,7 @@ html{
 
 body{
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(45deg, rgba(183, 204, 246, 0.651), rgba(3,49,68,100)), url("/assets/images/bg.jpg");
+    background: linear-gradient(45deg, rgba(183, 204, 246, 0.651), rgba(3,49,68,100)), url("/Assets/Images/bg.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -72,7 +72,7 @@ body{
     box-shadow: 4px 5px 15px  #00000083; 
     height: 170px;
     width: 700px;
-    background: linear-gradient(45deg, rgba(183, 204, 246, 0.404), rgba(3,49,68,100)), url('./assets/images/bg2.jpg');
+    background: linear-gradient(45deg, rgba(183, 204, 246, 0.404), rgba(3,49,68,100)), url('/Assets/Images/bg2.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
